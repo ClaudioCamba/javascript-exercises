@@ -1,6 +1,12 @@
 const repeatString = function (word, num) {
-    let repeatWord = word.repeat(num);
-    return repeatWord;
+
+    if (num >= 0) {
+        let repeatWord = word.repeat(num);
+        return repeatWord;
+    } else {
+        return 'ERROR';
+    }
+
 };
 
 // Do not edit below this line
